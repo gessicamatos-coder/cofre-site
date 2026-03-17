@@ -68,7 +68,7 @@ document.getElementById("desistir").addEventListener("click", function() {
                "Última chance... depois eu deixo 😏"][cliquesDesistir-1];
     } else {
         botao.style.transform = "translateX(0px)"; 
-        msg = "Ok... você venceu.\nSenha: 4321 😎";
+        msg = "Ok... você venceu.\nSenha: 4442 😎";
     }
 
     document.getElementById("mensagem").innerText = msg;
