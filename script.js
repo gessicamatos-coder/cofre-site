@@ -1,4 +1,4 @@
-var senhaCorreta = 4321;
+var senhaCorreta = 4442;
 var TentativasSenha= 0
 var botao = document.getElementById("bnt");
 
