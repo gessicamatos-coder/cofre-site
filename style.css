@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* fundo escuro estilo jogo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #2c2c2c; /* cofre interno */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    width: 350px;
+}
+
+h2 {
+    color: #ffcc00; /* título chamativo */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+/* Input da senha */
+#senha {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid #555;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Botões gerais */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+/* Botão tentar */
+#bnt {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#bnt:hover {
+    transform: scale(1.1);
+    background-color: #218838;
+}
+
+/* Botões de dica */
+#d1, #d2, #d3 {
+    background-color: #ffc107;
+    color: #000;
+}
+
+#d1:hover, #d2:hover, #d3:hover {
+    transform: scale(1.1);
+    background-color: #e0a800;
+}
+
+/* Botão desistir */
+#desistir {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#desistir:hover {
+    transform: scale(1.1);
+    background-color: #c82333;
+}
+
+/* Mensagem de feedback */
+#mensagem {
+    margin-top: 20px;
+    font-size: 16px;
+    min-height: 40px;
+    white-space: pre-line; /* mantém quebras de linha \n */
+}
+
+/* Desabilitado */
+button:disabled {
+    background-color: #555;
+    color: #888;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Pequena animação para abrir cofre */
+@keyframes abrirCofre {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#bnt.acerto {
+    animation: abrirCofre 0.5s ease-in-out;
+}
+.container {
+    text-align: center;
+    background: #2c2c2c;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    width: 400px;
+    margin: 20px auto;
+}
+
+.input-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.dicas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+#mensagem {
+    margin-top: 25px;
+    padding: 15px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: #111; 
+    color: #ffcc00; 
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px #000;
+    white-space: pre-line; 
+}
