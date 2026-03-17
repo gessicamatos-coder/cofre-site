@@ -38,19 +38,19 @@ document.getElementById("mensagem").innerText = msg;
 });
 
 document.getElementById("d1").addEventListener("click",function(){
-    document.getElementById("mensagem").innerText = "“Você está tentando contar… e esse é o erro.”";
+    document.getElementById("mensagem").innerText =  "🐱 = número de patas do gato";
 
     document.getElementById("d2").disabled= false;
 });
 
 
 document.getElementById("d2").addEventListener("click",function(){
-    document.getElementById("mensagem").innerText = "“Cada símbolo tem um significado.” ";
-
+    document.getElementById("mensagem").innerText = "🍂 = quantidade de estações do ano, 🔷 = lados de um quadrado";
     document.getElementById("d3").disabled= false;
 });
 document.getElementById("d3").addEventListener("click",function(){
-    document.getElementById("mensagem").innerText = "“A ordem precisa ser questionada.”";
+    document.getElementById("mensagem").innerText =  "🚲 = número de rodas de uma bicicleta comum";
+
 
 });
 var cliquesDesistir = 0;
